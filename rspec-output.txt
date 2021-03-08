@@ -1,0 +1,14 @@
+
+Post
+  request list of all posts
+.    can be routed
+
+
+Finished in 0.29284 seconds (files took 2.07 seconds to load)
+1 example, 0 failures
+
+Finished in 0.29284 seconds (files took 2.07 seconds to load)
+1 example, 0 failures
+
+
+Coverage report generated for RSpec to /mnt/c/Users/paulinewade/Documents/blogtest2-more tests/coverage. 66 / 86 LOC (76.74%) covered.

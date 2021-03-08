@@ -1,0 +1,8 @@
+
+Post
+  request list of all posts
+[32m    can be routed[0m
+
+Finished in 0.44125 seconds (files took 3.05 seconds to load)
+[32m1 example, 0 failures[0m
+
