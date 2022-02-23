@@ -6,7 +6,7 @@ feature "User inputs area code" do
     click_on "New User"
     fill_in "First name", with: "Pauline"
     fill_in "Last name", with: "Wade"
-    fill_in "Area Code", with: "979"
+    fill_in "Area code", with: "979"
     click_on "Create User"
 
     expect(page).to have_css 'p', text: '979'
@@ -14,16 +14,29 @@ feature "User inputs area code" do
   end
 
 
-#   scenario "unsuccessfully" do
-#     visit root_path
-#     click_on "New User"
-#     fill_in "First name", with: "Pauline"
-#     fill_in "Last name", with: "Wade"
-#     fill_in "Area Code", with: "abc"
-#     click_on "Create User"
-#
-#     expect(page).to have_css 'h2', text: 'prohibited'
-#
-#   end
+  scenario "unsuccessfully" do
+    visit root_path
+    click_on "New User"
+    fill_in "First name", with: "Pauline"
+    fill_in "Last name", with: "Wade"
+    fill_in "Area code", with: "abc"
+    click_on "Create User"
+
+    expect(page).to have_css 'h2', text: 'prohibited'
+
+  end
+
+  scenario "unsuccessfully" do
+    visit root_path
+    click_on "New User"
+    fill_in "First name", with: "Pauline"
+    fill_in "Last name", with: "Wade"
+    fill_in "Area code", with: "299"
+    click_on "Create User"
+
+    expect(page).to have_css 'h2', text: 'prohibited'
+
+  end
+
 
 end
